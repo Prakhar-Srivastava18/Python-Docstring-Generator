@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 2rem;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.editor-container {
+    display: flex;
+    gap: 1rem;
+    height: 60vh;
+    margin-bottom: 1rem;
+}
+textarea {
+    width: 50%;
+    background-color: #2d2d2d;
+    color: #d4d4d4;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    resize: none;
+}
+button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #005f9e;
+}
+#statusMessage {
+    margin-left: 1rem;
+    font-style: italic;
+    color: #4caf50;
+}

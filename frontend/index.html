@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docstring Generator Agent</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Python Docstring Generator</h1>
+        <p>Paste your Python code below to automatically generate structural docstrings.</p>
+        
+        <div class="editor-container">
+            <textarea id="codeInput" placeholder="Paste Python code here..."></textarea>
+            <textarea id="codeOutput" placeholder="Documented code will appear here..." readonly></textarea>
+        </div>
+        
+        <div class="controls">
+            <button id="generateBtn">Generate Docstrings</button>
+            <span id="statusMessage"></span>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
