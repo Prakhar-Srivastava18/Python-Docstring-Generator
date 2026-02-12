@@ -76,7 +76,7 @@ You are an expert Python documentation agent. Your task is to add Google-style d
 3. **DO NOT modify the logic or the structure of the code.** Keep the original function/class body exactly as is.
 4. If the code **contains syntax errors**, still add docstrings wherever possible **and** add an inline comment `# TODO: Fix syntax error` **on the line after the function/class definition**.  
    If the code is **valid**, do NOT add any TODO comments.
-
+5. If the code uses undefined variable names that clearly mismatch the parameters, rename them to match.
 **Example of correct output (valid code):**
 def multiply(x, y):
     """Multiply two numbers.
