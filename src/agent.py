@@ -57,7 +57,7 @@ print(f"🔑 Using API key from: {KEY_SOURCE}")
 # 3. MODEL – gemini-flash-latest (available for all new keys)
 # ----------------------------------------------------------------------
 llm = ChatGoogleGenerativeAI(
-    model="gemini-flash-latest",
+    model="gemini-2.5-flash",
     google_api_key=API_KEY,
     temperature=0.1,
 )
