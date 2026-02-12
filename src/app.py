@@ -4,6 +4,16 @@ from fastapi.responses import FileResponse
 from src.models import CodeRequest, CodeResponse
 from src.agent import generate_docstrings
 import os
+import sys
+import traceback
+
+try:
+    from fastapi import FastAPI
+    # your other imports...
+except Exception as e:
+    print("🔥 FATAL IMPORT ERROR:", file=sys.stderr)
+    traceback.print_exc(file=sys.stderr)
+    raise  # Vercel will capture this
 
 app = FastAPI(title="Docstring Generation Agent")
 
